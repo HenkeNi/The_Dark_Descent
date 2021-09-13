@@ -16,6 +16,6 @@ private:
 
 private:
 	//Dungeon myDungeon;
-	Hero    myHero;
+	//Hero    myHero; - in constructor readfrom file which race (make function)
 };
 
