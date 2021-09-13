@@ -1,0 +1,5 @@
+********** Main Menu *********
+1. Start a new game
+2. Continue
+3. Quit
+******************************
