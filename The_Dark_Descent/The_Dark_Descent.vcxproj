@@ -88,6 +88,9 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>src\creatures;src\utility;src\states</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -139,7 +142,58 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\dungeon\Door.cpp" />
+    <ClCompile Include="src\dungeon\Dungeon.cpp" />
+    <ClCompile Include="src\dungeon\Floor.cpp" />
+    <ClCompile Include="src\dungeon\Room.cpp" />
+    <ClCompile Include="src\FileHandler.cpp" />
+    <ClCompile Include="src\InputManager.cpp" />
+    <ClCompile Include="src\states\CharacterCreationState.cpp" />
+    <ClCompile Include="src\creatures\Monster.cpp" />
+    <ClCompile Include="src\creatures\Hero.cpp" />
+    <ClCompile Include="src\creatures\Creature.cpp" />
+    <ClCompile Include="src\states\GameState.cpp" />
+    <ClCompile Include="src\states\MenuState.cpp" />
+    <ClCompile Include="src\Game.cpp" />
+    <ClCompile Include="src\pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pch.h</PrecompiledHeaderFile>
+    </ClCompile>
     <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\utility\Utility.cpp" />
+    <ClCompile Include="src\StateStack.cpp" />
+    <ClCompile Include="src\states\State.cpp" />
+    <ClCompile Include="src\creatures\Stats.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\dungeon\Door.h" />
+    <ClInclude Include="src\dungeon\Dungeon.h" />
+    <ClInclude Include="src\dungeon\Floor.h" />
+    <ClInclude Include="src\dungeon\Room.h" />
+    <ClInclude Include="src\FileHandler.h" />
+    <ClInclude Include="src\InputManager.h" />
+    <ClInclude Include="src\states\CharacterCreationState.h" />
+    <ClInclude Include="src\creatures\Monster.h" />
+    <ClInclude Include="src\creatures\Hero.h" />
+    <ClInclude Include="src\creatures\Creature.h" />
+    <ClInclude Include="src\states\GameState.h" />
+    <ClInclude Include="src\states\MenuState.h" />
+    <ClInclude Include="src\Game.h" />
+    <ClInclude Include="src\pch.h" />
+    <ClInclude Include="src\utility\Utility.h" />
+    <ClInclude Include="src\StateStack.h" />
+    <ClInclude Include="src\states\State.h" />
+    <ClInclude Include="src\creatures\Stats.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="src\files\menus\MainMenu.txt" />
+    <Text Include="src\files\menus\RaceSelection.txt" />
+    <Text Include="src\files\menus\ClassSelection.txt" />
+    <Text Include="src\files\SavedGame.txt" />
+    <Text Include="src\files\titles\GameTitle.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\InputManager.inl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
