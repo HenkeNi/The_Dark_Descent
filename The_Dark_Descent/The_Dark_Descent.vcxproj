@@ -166,6 +166,7 @@
     <ClCompile Include="src\creatures\Stats.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\creatures\Attributes.h" />
     <ClInclude Include="src\dungeon\Door.h" />
     <ClInclude Include="src\dungeon\Dungeon.h" />
     <ClInclude Include="src\dungeon\Floor.h" />
