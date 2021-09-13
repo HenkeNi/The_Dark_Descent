@@ -2,9 +2,28 @@
 #include "Game.h"
 
 
+
+
+#include "Monster.h"
+#include "Hero.h"
+
+
 int main()
 {
-	std::srand(static_cast<unsigned int>(std::time(nullptr)));
+
+	Monster monster{ Monster::Type::Zombie };
+	Hero    hero{ Hero::Type::Human };
+
+	while (monster.isAlive())
+		hero.attack(monster);
+
+
+	std::cout << "MOnster is dead! " << monster.isAlive(); // check health
+
+
+
+
+	/*std::srand(static_cast<unsigned int>(std::time(nullptr)));
 	std::rand();
 	
 	try
@@ -15,7 +34,7 @@ int main()
 	catch (...)
 	{
 		std::cerr << "Unexpected error. Program terminating...\n";
-	}
+	}*/
 
 	return 0;
 }
