@@ -12,6 +12,8 @@ public:
 public:
 	Monster(Type type);
 
+	std::string getTypeAsString();
+
 private:
 	Type myType;
 };
