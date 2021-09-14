@@ -6,6 +6,7 @@ class GameState : public State
 {
 public:
 	GameState(StateStack& aStateStack, InputManager& anInputManager);
+	~GameState();
 
 	virtual void render()		override;
 	virtual void handleEvent()  override;
@@ -13,9 +14,12 @@ public:
 
 private:
 	void initDungeon();
+	void initPlayer();
+
+	void showGameOver();
 
 private:
 	//Dungeon myDungeon;
-	//Hero    myHero; - in constructor readfrom file which race (make function)
+	Hero*    myPlayer; // - in constructor readfrom file which race (make function)
 };
 
