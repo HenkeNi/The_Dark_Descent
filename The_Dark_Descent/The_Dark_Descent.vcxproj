@@ -142,6 +142,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\factories\DungeonFactory.cpp" />
     <ClCompile Include="src\dungeon\Door.cpp" />
     <ClCompile Include="src\dungeon\Dungeon.cpp" />
     <ClCompile Include="src\dungeon\Floor.cpp" />
@@ -164,8 +165,10 @@
     <ClCompile Include="src\StateStack.cpp" />
     <ClCompile Include="src\states\State.cpp" />
     <ClCompile Include="src\creatures\Stats.cpp" />
+    <ClCompile Include="src\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\factories\DungeonFactory.h" />
     <ClInclude Include="src\creatures\Attributes.h" />
     <ClInclude Include="src\dungeon\Door.h" />
     <ClInclude Include="src\dungeon\Dungeon.h" />
@@ -185,12 +188,14 @@
     <ClInclude Include="src\StateStack.h" />
     <ClInclude Include="src\states\State.h" />
     <ClInclude Include="src\creatures\Stats.h" />
+    <ClInclude Include="src\Window.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="src\files\menus\MainMenu.txt" />
     <Text Include="src\files\menus\RaceSelection.txt" />
     <Text Include="src\files\menus\ClassSelection.txt" />
     <Text Include="src\files\SavedGame.txt" />
+    <Text Include="src\files\titles\GameOverTitle.txt" />
     <Text Include="src\files\titles\GameTitle.txt" />
   </ItemGroup>
   <ItemGroup>

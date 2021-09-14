@@ -72,6 +72,12 @@
     <ClCompile Include="src\creatures\Stats.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\factories\DungeonFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\utility\Utility.h">
@@ -131,6 +137,12 @@
     <ClInclude Include="src\creatures\Attributes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\factories\DungeonFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="src\files\SavedGame.txt" />
@@ -138,6 +150,7 @@
     <Text Include="src\files\menus\RaceSelection.txt" />
     <Text Include="src\files\titles\GameTitle.txt" />
     <Text Include="src\files\menus\MainMenu.txt" />
+    <Text Include="src\files\titles\GameOverTitle.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="src\InputManager.inl">
