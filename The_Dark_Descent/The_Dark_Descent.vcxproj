@@ -142,6 +142,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\playground\console_movement\ConsoleMovement.cpp" />
     <ClCompile Include="src\factories\DungeonFactory.cpp" />
     <ClCompile Include="src\dungeon\Door.cpp" />
     <ClCompile Include="src\dungeon\Dungeon.cpp" />
@@ -168,6 +169,7 @@
     <ClCompile Include="src\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\playground\console_movement\ConsoleMovement.h" />
     <ClInclude Include="src\factories\DungeonFactory.h" />
     <ClInclude Include="src\creatures\Attributes.h" />
     <ClInclude Include="src\dungeon\Door.h" />
@@ -191,6 +193,8 @@
     <ClInclude Include="src\Window.h" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="src\files\dungeon_layout\DungeonLayout.txt" />
+    <Text Include="src\files\Input.txt" />
     <Text Include="src\files\menus\MainMenu.txt" />
     <Text Include="src\files\menus\RaceSelection.txt" />
     <Text Include="src\files\menus\ClassSelection.txt" />
