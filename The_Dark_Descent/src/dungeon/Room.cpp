@@ -6,11 +6,16 @@
 #include "Utility.h"
 
 
-Room::Room(Hero& aPlayer)
-	: myPlayer{ aPlayer }
+//Room::Room(Hero& aPlayer)
+//	: myPlayer{ aPlayer }
+//{
+//	initMonsters();
+//}
+Room::Room()
 {
 	initMonsters();
 }
+
 
 
 void Room::initMonsters()

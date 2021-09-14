@@ -6,8 +6,8 @@ class Hero;
 class Room
 {
 public:
-	Room(Hero& aPlayer);
-
+	//Room(Hero& aPlayer);
+	Room();
 
 	void getInteraction(); // TODO: rename!? 
 
@@ -18,7 +18,7 @@ private:
 	void battle(Hero& aPlayer, Monster& aMonster);
 
 private:
-	Hero& myPlayer;
+	//Hero& myPlayer;
 	// FIGHT MANAGER?? - BattleManager (singleton?!)
 	
 	std::stack<Monster> myMonsters;
