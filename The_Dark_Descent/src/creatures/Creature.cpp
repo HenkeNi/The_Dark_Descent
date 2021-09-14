@@ -17,7 +17,7 @@ void Creature::takeDamage(int anAmount)
 
 int Creature::getDamageOutput() const
 {
-	return 10;
+	return 25;
 }
 
 
@@ -30,6 +30,10 @@ void Creature::incrementLevel()
 }
 
 
+int Creature::getCurrentHealth() const
+{
+	return myHitPoints;
+}
 
 
 int Creature::getMaxHealth() const
@@ -44,7 +48,11 @@ bool Creature::isAlive() const
 }
 
 
-
+void Creature::addGold(int anAmount)
+{
+	assert(anAmount >= 0);
+	myGold += anAmount;
+}
 
 
 void Creature::printAttributes() const

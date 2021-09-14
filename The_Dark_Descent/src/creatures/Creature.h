@@ -13,8 +13,16 @@ public:
 
 	void incrementLevel();
 
+	int getCurrentHealth() const;
+
 	int getMaxHealth() const;
 	bool isAlive() const;
+
+
+
+	void addGold(int anAmount);
+
+
 
 private:
 	void printAttributes() const;
@@ -26,6 +34,8 @@ private:
 
 
 	int myLevel;
+
+	int myGold;
 	// TODO: carried items...
 
 };
