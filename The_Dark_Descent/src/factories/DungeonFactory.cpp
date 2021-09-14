@@ -2,7 +2,7 @@
 #include "DungeonFactory.h"
 #include "../dungeon/Dungeon.h"
 #include "../dungeon/Floor.h"
-
+#include "../dungeon/Door.h"
 
 Dungeon* DungeonFactory::create(int aNumberOfFloors)
 {
@@ -15,7 +15,7 @@ Dungeon* DungeonFactory::create(int aNumberOfFloors)
 	}
 
 
-	return new Dungeon;
+	return dungeon;
 
 }
 
@@ -25,7 +25,8 @@ Floor DungeonFactory::getFloor()
 	return Floor{};
 }
 
-//void rooms()
-//{
-//
-//}
+
+Room DungeonFactory::getRoom()
+{
+	return Room{};
+}

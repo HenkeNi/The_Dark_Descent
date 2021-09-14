@@ -2,7 +2,9 @@
 
 class Dungeon;
 class Floor;
+class Room;
 
+// TODO: make namespace...
 class DungeonFactory
 {
 public:
@@ -11,6 +13,7 @@ public:
 
 private:
 	Floor getFloor();
+	Room  getRoom();
 
 
 };
