@@ -90,7 +90,7 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>src\creatures;src\utility;src\states</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>src\dungeon;src\creatures;src\utility;src\states;src\;src\factories</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -194,7 +194,7 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="src\files\dungeon_layout\DungeonLayout.txt" />
-    <Text Include="src\files\Input.txt" />
+    <Text Include="src\files\layouts\ScreenBottom.txt" />
     <Text Include="src\files\menus\MainMenu.txt" />
     <Text Include="src\files\menus\RaceSelection.txt" />
     <Text Include="src\files\menus\ClassSelection.txt" />

@@ -157,8 +157,8 @@
     <Text Include="src\files\titles\GameTitle.txt" />
     <Text Include="src\files\menus\MainMenu.txt" />
     <Text Include="src\files\titles\GameOverTitle.txt" />
-    <Text Include="src\files\Input.txt" />
     <Text Include="src\files\dungeon_layout\DungeonLayout.txt" />
+    <Text Include="src\files\layouts\ScreenBottom.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="src\InputManager.inl">
