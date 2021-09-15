@@ -21,7 +21,9 @@ public:
 	void getInteraction(); // TODO: rename!? 
 	void printRoomDescription() const;
 	
-	void addDoor(Door&& door);
+	void addDoorTo(Room* room);
+
+	//void addDoor(Door&& door);
 
 	Door& getDoor(int index);
 

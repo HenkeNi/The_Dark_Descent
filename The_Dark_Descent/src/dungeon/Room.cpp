@@ -43,10 +43,16 @@ void Room::printRoomDescription() const
 	std::cout << myRoomDescription << '\n';
 }
 
-void Room::addDoor(Door&& door)
+//void Room::addDoor(Door&& door)
+//{
+//	myDoors.push_back(std::move(door));
+//}
+
+void Room::addDoorTo(Room* room)
 {
-	myDoors.push_back(std::move(door));
+	myDoors.emplace_back(this, room);
 }
+
 
 Door& Room::getDoor(int index)
 {
