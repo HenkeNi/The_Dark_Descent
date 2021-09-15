@@ -1,8 +1,8 @@
 ********** Pick a Race *********
 1. Human
-	strength: 7, dexterity: 6, vitality: 6, magic: 5
+	(strength: 7, dexterity: 6, vitality: 6, magic: 5)
 2. Elf
-	strength: 4, dexterity: 9, vitality: 5, magic: 8
+	(strength: 4, dexterity: 9, vitality: 5, magic: 8)
 3. Dwarf
-	strength: 9, dexterity: 5, vitality: 8, magic: 0
+	(strength: 9, dexterity: 5, vitality: 8, magic: 0)
 *********************************
