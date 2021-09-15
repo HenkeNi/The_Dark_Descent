@@ -8,12 +8,21 @@ class Room;
 class DungeonFactory
 {
 public:
+	static DungeonFactory* getInstance();
+
 	Dungeon* create(int aNumberOfFloors);
 
 
 private:
+	DungeonFactory() = default;
 	Floor getFloor();
 	Room  getRoom();
+
+private:
+	static DungeonFactory* myInstance;
+
+	// TODO: read from file...
+	std::stack<std::string> myDungeonNames();
 
 
 };
