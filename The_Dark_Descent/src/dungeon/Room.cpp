@@ -1,21 +1,21 @@
 #include "pch.h"
 #include "Room.h"
-
 #include "Hero.h"
 #include "Monster.h"
 #include "Utility.h"
 
 
-//Room::Room(Hero& aPlayer)
-//	: myPlayer{ aPlayer }
-//{
-//	initMonsters();
-//}
+
 Room::Room()
 {
 	initMonsters();
 }
 
+
+//void Room::openDoor(int aIndex)
+//{
+//	myDoors[aIndex].openDoor(*this);
+//}
 
 
 void Room::initMonsters()
@@ -35,6 +35,40 @@ void Room::getInteraction()
 	{
 		encounterEnemy();
 	}
+}
+
+
+void Room::printRoomDescription() const
+{
+	std::cout << myRoomDescription << '\n';
+}
+
+void Room::addDoor(Door&& door)
+{
+	myDoors.push_back(std::move(door));
+}
+
+Door& Room::getDoor(int index)
+{
+	return myDoors.at(index);
+}
+
+
+void Room::setPlayer(Hero* aPlayer)
+{
+	myPlayer = aPlayer;
+}
+
+Hero* Room::getPlayer() const
+{
+	return myPlayer;
+}
+
+Room& Room::setRoomDescription(const std::string& description)
+{
+	myRoomDescription = description;
+
+	return *this;
 }
 
 
@@ -75,4 +109,16 @@ void Room::battle(Hero& aPlayer, Monster& aMonster)
 	std::cout << "Enemy wins!\n";
 
 
+}
+
+
+
+
+void Room::showAvailableDoors() const
+{
+	for (int i{ 0 }; i < myDoors.size(); ++i)
+	{
+		std::string desc = myDoors[i].getLeadsOut() ? "This door seems to lead out" : "";
+		std::cout << (i + 1) << " " << myDoors[i].getDescription() << desc << '\n';
+	}
 }
