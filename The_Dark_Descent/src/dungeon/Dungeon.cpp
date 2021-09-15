@@ -7,3 +7,5 @@ void Dungeon::addFloor(Floor floor)
 {
 	myFloores.push_back(floor);
 }
+
+
