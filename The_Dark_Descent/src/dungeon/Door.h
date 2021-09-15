@@ -1,19 +1,21 @@
 #pragma once
 
-//class Room;
-#include "Room.h"
+class Room;
 
 class Door
 {
 public:
-	Door(Room& aFirstRoom, Room& aSecondRoom);
+	Door(Room* aFirstRoom, Room* aSecondRoom);
 
-	Room& openDoor();
+	void openDoor(Room& currentRoom);
 	//void walkThroughDoor(Room& from, Room& to);
 
+	bool			   getLeadsOut()    const;
+	const std::string& getDescription() const;
 
 private:
-	std::pair<Room, Room> myAdjacentRooms;
-
+	std::pair<Room*, Room*> myAdjacentRooms;
+	std::string myDescription;
+	bool myLeadsOut;
 };
 
