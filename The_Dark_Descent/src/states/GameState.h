@@ -1,6 +1,7 @@
 #pragma once
 #include "State.h"
 #include "Hero.h"
+#include "../dungeon/Dungeon.h"
 
 class GameState : public State
 {
@@ -19,7 +20,8 @@ private:
 	void showGameOver();
 
 private:
-	//Dungeon myDungeon;
+	Dungeon* myDungeon;
 	Hero*    myPlayer; // - in constructor readfrom file which race (make function)
+
 };
 
